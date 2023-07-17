@@ -1,0 +1,30 @@
+<div class="container-xxl py-5">
+    <section class="container" id='login'>
+        <div class='form'>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="space">
+                    <input type="text" autocomplete="off" placeholder='Enter Username' class="text form-control"
+                        id='username' formControlName="userName">
+                    <div *ngIf="((loginForm.controls.userName.invalid) && (loginForm.controls.userName.touched || loginForm.controls.userName.dirty))"
+                        class="error">
+                        <div class="errMsg">Username is required</div>
+                    </div>
+                </div>
+                <div class="space">
+                    <input type="password" autocomplete="off" placeholder='***************' class="text form-control"
+                        formControlName="password">
+                    <div *ngIf="((loginForm.controls.password.invalid) && (loginForm.controls.password.touched || loginForm.controls.password.dirty))"
+                        class="error">
+                        <div class="errMsg">Password is required</div>
+                    </div>
+                </div>
+
+                <button [disabled]="!loginForm.valid" class="btn btn-success" id='do-login'>Login</button>
+            </form>
+            <div class="row">
+                Hint: UserName- Akanksha,
+                Password- admin
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,46 @@
+<div *ngIf="loggedIn" class="container-xxl py-5">
+  <div class="container">
+    <div class="row">
+      <h3 class="text-center">
+        Welcome {{loggeduserName| uppercase}}
+      </h3>
+
+      <div class="col-sm-6">
+        <h4><b>{{loggeduserName| uppercase}} Details</b></h4>
+      </div>
+
+      <div class="container-xl">
+        <div class="table-responsive">
+          <div class="table-wrapper">
+
+            <table class="table table-striped table-hover table-bordered table-content">
+              <thead>
+                <tr class="center-align">
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Department</th>
+                  <th>Date Of Joining</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="center-align">
+                  <td>Akanksha</td>
+                  <td>Gupta</td>
+                  <td>Development</td>
+                  <td>3-Dec-2018</td>
+
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <mat-card>
+            <mat-card-content>Employee</mat-card-content>
+          </mat-card> -->
+    <!-- <app-employees></app-employees> -->
+  </div>
+</div>

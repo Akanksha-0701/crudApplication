@@ -1,0 +1,14 @@
+.form-control{
+    width:40%;
+    padding:13px;
+}
+.space{
+    padding-bottom:40px;
+}
+.error{
+    color:red;
+}
+.row{
+    padding-top:44px;
+    width:40%;
+}
